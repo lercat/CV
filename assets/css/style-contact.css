@@ -1,0 +1,222 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* MENU */
+#header {
+  background-color: #28A0FC;
+  width: 100%;
+  top: 0;
+}
+#header nav  {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header nav .logo {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+}
+#header nav .logo .maphoto {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  align-self: center;
+  margin-right: 10px;
+}
+#header nav .logo img {
+  vertical-align: top;
+  width: 70px;
+}
+
+nav .ico {
+  display: inline-block;
+  text-align: right;
+  font-family: 'Roboto', sans-serif; /* police ds le menu*/
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+nav .ico a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.2em;
+  
+}
+nav .ico a:hover {
+  color: #f30;
+}
+nav .ico  .i {
+  width: 3%;
+  height: 3%;
+  padding-right: 0.6em;
+
+}
+
+
+/* rajout image-logo arrondi enfin presque mais ça me plait comme ça :)*/
+.logo, .maphoto {
+overflow:hidden;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+img { width: 100px;
+    height: 100px;
+    margin:auto;
+}
+h1 {
+  text-align: center;
+  color: #2A3031; /*gris-noir*/
+  padding: 0.4em;
+}
+h3 {
+      text-align: center;
+      color: #2A3031;
+      opacity: 0.8;
+}
+h4 {
+      text-align: center;
+      color: #28A0FC;
+      opacity: 0.8;
+  }
+
+form {
+        /* Just to center the form on the page */
+        margin: 2em auto;
+        width: 300px;
+      
+        /* To see the limits of the form */
+        padding: 1em;
+        border: 1px solid #28A0FC;
+        border-radius: 1em;
+      }
+      
+      div + div {
+        margin-top: 1em;
+      }
+      
+      label {
+        /* To make sure that all label have the same size and are properly align */
+        display: inline-block;
+        width: 1em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #28A0FC;
+
+        padding-bottom: 1em;
+      }
+      
+      input, textarea {
+        /* To make sure that all text field have the same font settings
+           By default, textarea are set with a monospace font */
+        font: 14px 'Roboto';
+      
+        /* To give the same size to all text field */
+        width: 300px;
+      
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+      
+        /* To harmonize the look & feel of text field border */
+        border: 1px solid #000;
+      }
+      
+      input:focus, textarea:focus {
+        /* To give a little highligh on active elements */
+        border-color: rgb(0, 0, 0);
+      }
+      
+      textarea {
+        /* To properly align multiline text field with their label */
+        vertical-align: top;
+        color:  rgba(28, 28, 28, 0.9);
+      
+        /* To give enough room to type some text */
+        height: 10em;
+      
+        /* To allow users to resize any textarea vertically
+           It works only on Chrome, Firefox and Safari */
+        resize: vertical;
+      }
+      
+      .button {
+        /* To position the buttons to the same position of the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
+      
+      button {
+        /* This extra magin represent the same space as the space between
+           the labels and their text fields */
+        margin-left: .5em;
+      
+}
+
+
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #28A0FC;
+  }
+  
+  footer img {
+    width: 68px;
+    height: 68px;
+  }
+  /* FIN FOOTER ///////////////////////////// */
+
+  /* FAIRE LE RESPONSIVE */
+  @media all and (max-width: 780px) {
+    #header nav {
+      flex-direction: column;
+    }
+    #header nav .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-start;
+    }
+    #header nav .logo img {
+      width: auto; /*changement pour ma photo devient rectangulaire*/
+    }
+    #header nav .logo .maphoto {
+      display: inline-block;
+    }
+    #header nav .ico {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    #header nav .ico a {
+      border-bottom: 2px solid #FC6822;
+    }
+    #header nav .ico a:hover {
+      background-color: #2A3031;/* changer*/
+      color: white;
+    }
+
+    #footer .pe {
+      width: 40px;
+      height: 40px;
+    }
+  }
+

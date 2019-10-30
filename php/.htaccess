@@ -1,0 +1,5 @@
+Require all Denied
+# CETTE LIGNE PERMET DE DEMANDER A APACHE
+# DE BLOQUER L'ACCES AUX NAVIGATEURS POUR LE DOSSIER ACTUEL
+# https://httpd.apache.org/docs/current/fr/howto/access.html
+# => Accès interdit!
