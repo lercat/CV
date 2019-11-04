@@ -14,8 +14,8 @@
         Dans le futur, j'aimerai intégrer une petite société dynamique.<br/>
         <br/>
       </p>
-    </div><!-- .card-content /////////////////////1ere card /ok mauvaise taille de l'image-->
-</article><!-- .card -->
+    </div>
+</article>
 
 <article class="card">
     <div class="miniature">
@@ -24,8 +24,8 @@
     </div>
     <div class="card-content">
        <p>Rajout prochainement !!!</p>
-    </div><!-- .card-content //////////////////////2eme card ok mauvaise taille de l'image-->
-</article><!-- .card -->
+    </div>
+</article>
 
  <article class="card">
     <div class="miniature">
@@ -36,8 +36,8 @@
         <p id="colorMsg">Autre css, autre couleur de mon CV <br/>
             <button onclick="setActiveStyleSheet('')" class="btn">bleu</button><br/>
             <button onclick="setActiveStyleSheet('CSS2')" class="btn">orange</button></p>
-    </div><!-- .card-content -->
-</article><!-- .card -->
+    </div>
+</article>
 
 <article class="card">
     <div class="miniature">
@@ -48,9 +48,9 @@
         <a href="#"> <img src="assets/images/fb.png" alt="Facebook" /></a>
         <a href="#"><img src="assets/images/tw.png" alt="Twitter" /></a>
         <a href="https://www.linkedin.com/in/catherine-le-roy-26276445/"> <img src="assets/images/in.png" alt="Linkedin" /></a>
-    </div><!-- .card-content43eme card switch css-->
-</article><!-- .card -->
-</section><!-- .cards -->
+    </div>
+</article>
+</section>
 
 
 <section class="articles">

@@ -25,7 +25,6 @@
     <nav>
       <div class="logo">
         <img  class=".maphoto"  src="assets/images/photo-cv.jpg" alt="photo de cathy" />
-       <!-- <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>-->
       </div>
       <div class="ico">
         <a href="#exp"><img class="i" src="assets/images/img_svg/01-experience.svg" alt="icone experience">Expériences</a>

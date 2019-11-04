@@ -15,10 +15,6 @@ function setActiveStyleSheet(title) {
 }
 
 
-
-
-// CREER DES FONCTIONS POUR SE SIMPLIFIER LA VIE
-// utilisation
 // ajouterAction('button.delete', 'click', function(){ });
 function ajouterAction (selecteurCSS, evenement, fonctionCallback)
 {
@@ -104,6 +100,7 @@ function creerHtmlGalerie (tabGalerie)
     listeGalerieAdmin.innerHTML = '';
 
     // parcourir le tableau
+    // crud non terminé pour une galerie de photos
     tabGalerie.forEach(function(article, indice){
         // je vais construire le HTML
         var codeHtmlArticle = `

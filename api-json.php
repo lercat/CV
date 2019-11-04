@@ -19,7 +19,6 @@ if ($idFormulaire != "")
 
 $tabAssoJson["confirmation"] = $confirmation ?? "";
 
-
 $texteJSON = json_encode($tabAssoJson, JSON_PRETTY_PRINT);
 
 echo $texteJSON;

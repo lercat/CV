@@ -5,8 +5,6 @@ body {
   padding: 0;
 }
 
-
-
 /* MENU */
 #header {
   background-color: #28A0FC;
@@ -161,7 +159,7 @@ form {
       }
       
       button {
-        /* This extra magin represent the same space as the space between
+        /* This extra margin represent the same space as the space between
            the labels and their text fields */
         margin-left: .5em;
       

@@ -11,13 +11,11 @@ function creerConnexionBDD()
         // créer la connexion avec MySQL
         $dbh = new PDO($dsn, $user, $password);
 
-
     return $dbh;
 }
 
 function envoyerRequeteSQL ($requeteSQLPreparee, $tabAssoColonneValeur)
 {
-
     $dbh = creerConnexionBDD();
 
     $pdoStatement = $dbh->prepare($requeteSQLPreparee);
@@ -45,7 +43,6 @@ ORDER BY $tri
 CODESQL;
 
     $pdoStatement = envoyerRequeteSQL($requeteSQLPreparee, []);
-
     $tabLigne = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
 
     return $tabLigne;
@@ -94,7 +91,7 @@ function insererLigneTable($nomTable, $tabAssoColonneValeur)
     return $pdoStatement;
 }
 
-// DELETE
+// delete
 
 function supprimerLigne($nomTable, $id)
 {
@@ -119,13 +116,9 @@ function modifierLigne($nomTable, $id, $tabAssoColonneValeur)
 {
     $id = intval($id);
     $listeColonneToken = "";
-    // A VOUS LES STUDIOS... 
     // LA LISTE DES COLONNES EST DANS LES CLES DU TABLEAU ASSOCIATIF $tabAssoColonneValeur
     $indice = 0;
-    // on crée une variable $nouvelleValeur
-    // mais on ne l'utilise pas
-    // => si on veut la clé, PHP nous oblige à ajouter aussi la variable pour la valeur
-    // (mais on ne s'en sert pas)
+
     foreach($tabAssoColonneValeur as $colonne => $nouvelleValeur)
     {
         // est-ce qu'on est au début ?
@@ -142,7 +135,7 @@ function modifierLigne($nomTable, $id, $tabAssoColonneValeur)
         
         $indice++;
     }
-    // REQUETE SQL PREPAREE
+    // requête sql préparée
     $requeteSQLPreparee =
 <<<CODESQL
 UPDATE $nomTable
@@ -150,7 +143,7 @@ SET
 $listeColonneToken
 WHERE id = $id
 CODESQL;
-    // ENVOYER LA REQUETE SQL PREPAREE
+    // envoyer la requête sql préparée
     $pdoStatement = envoyerRequeteSQL($requeteSQLPreparee, $tabAssoColonneValeur);
     // renvoyer $pdoStatement
     return $pdoStatement;
