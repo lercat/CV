@@ -252,6 +252,11 @@ footer img {
   .cards .card .card-content a img { /*changement ////////////////////////////////:ici*/
   width: 14%;
     }
+
+    footer img {
+      width: 30px;
+      height: 30px;
+    }
 }
 
 @media all and (min-width: 480px) { 
@@ -270,6 +275,11 @@ footer img {
     padding: 2em 0.4em 0.5em 1em;
     justify-content: space-between;
     width: 20%;
+  }
+
+  footer img {
+    width: 48px;
+    height: 48px;
   }
 
  
