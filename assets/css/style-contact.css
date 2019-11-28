@@ -181,7 +181,7 @@ form {
   }
   /* FIN FOOTER ///////////////////////////// */
 
-  /* FAIRE LE RESPONSIVE */
+  /* FINIR LE RESPONSIVE */
   @media all and (max-width: 780px) {
     #header nav {
       flex-direction: column;
@@ -208,7 +208,7 @@ form {
       border-bottom: 2px solid #FC6822;
     }
     #header nav .ico a:hover {
-      background-color: #2A3031;/* changer*/
+      background-color: #2A3031;
       color: white;
     }
 

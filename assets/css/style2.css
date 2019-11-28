@@ -83,7 +83,7 @@ img {
 
 h1 {
   text-align: center;
-  color: #28A0FC;
+  color:#FC6822;
   padding: 0.4em;
 }
 
@@ -212,6 +212,14 @@ footer img {
   .cards .card .card-content a img {
   width: 14%;
   }
+  h2 {
+    padding-bottom: 3%;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media all and (min-width: 480px) {
@@ -229,6 +237,14 @@ footer img {
     justify-content: space-between;
     width: 20%;
   }
+  h2 {
+    padding-bottom: 3%;
+  }
+
+footer img {
+  width: 48px;
+  height: 48px;
+}
 }
 
 @media all and (min-width: 930px) {
